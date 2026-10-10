@@ -1,0 +1,5 @@
+Oct  3 16:13:36 aeon-srv sshd[2291]: Accepted password for attacker from 203.0.113.77 port 51133 ssh2
+Oct  3 16:13:37 aeon-srv sshd[2291]: pam_unix(sshd:session): session opened for user attacker(uid=1001) by (uid=0)
+Oct  3 16:14:19 aeon-srv sudo: attacker : TTY=pts/0 ; PWD=/home/attacker ; USER=root ; COMMAND=/bin/ls /
+Oct  3 16:15:04 aeon-srv sudo: attacker : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/bin/rm /incident_report_final.dd
+Oct  3 16:15:22 aeon-srv sshd[2291]: pam_unix(sshd:session): session closed for user attacker

@@ -1,0 +1,12 @@
+services:
+  stage6-target:
+    build: ./app
+    restart: always
+    ports:
+      - "0.0.0.0:2222:22"
+    networks:
+      - aegis-stage6-net
+
+networks:
+  aegis-stage6-net:
+    external: true

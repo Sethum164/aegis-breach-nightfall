@@ -1,0 +1,24 @@
+services:
+  stage3-web:
+    build: ./app
+    restart: always
+    ports:
+      - "0.0.0.0:8083:80"
+    depends_on:
+      - db
+    networks:
+      - aegis-stage3-net
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpass
+    volumes:
+      - ./app/db.sql:/docker-entrypoint-initdb.d/db.sql:ro
+    networks:
+      - aegis-stage3-net
+
+networks:
+  aegis-stage3-net:
+    external: true

@@ -1,0 +1,6 @@
+cat /etc/passwd
+whoami
+ls -la /
+cat /incident_report_final.dd
+sudo rm /incident_report_final.dd
+history -c

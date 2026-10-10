@@ -1,0 +1,5 @@
+.data/
+*.pyc
+__pycache__/
+stage5/evidence_raw.dd
+stage5/stage5_evidence.zip
