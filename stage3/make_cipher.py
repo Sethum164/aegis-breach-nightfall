@@ -1,3 +1,4 @@
+# Stage 4 cipher generator - built by Sewmina G.D.D. (IT24103936)
 import base64
 
 plaintext = "the evidence file is named incident_report_final.dd check the auth log for 03:14 flag is AEGIS{layers_of_the_vault}"
