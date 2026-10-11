@@ -1,3 +1,4 @@
+#stage 2 steganography encoder - build by Ambegoda L.D.S.P (IT24103839)
 from PIL import Image
 
 msg = "AEGIS{pixel_whispers_found} PORTAL:http://localhost:8083/login.php"
